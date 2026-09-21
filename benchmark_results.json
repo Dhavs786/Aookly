@@ -1,0 +1,197 @@
+[
+  {
+    "media_type": "image",
+    "input_file": "D:\\Aookly\\samples\\input\\sample_image_10mb.png",
+    "output_file": "D:\\Aookly\\samples\\output\\sample_image_10mb_ai_compressed.webp",
+    "original_size_bytes": 7043684,
+    "compressed_size_bytes": 440724,
+    "compression_ratio": 15.98,
+    "reduction_percentage": 93.74,
+    "psnr_db": 30.58,
+    "ssim": 0.9203,
+    "total_processing_time_sec": 7.767,
+    "iterations_performed": 2,
+    "characteristics": {
+      "width": 4000,
+      "height": 2600,
+      "megapixels": 10.4,
+      "aspect_ratio": 1.538,
+      "channels": 3,
+      "file_size_bytes": 7043684,
+      "spatial_information": 63.79,
+      "laplacian_variance": 400.26,
+      "shannon_entropy": 7.316,
+      "color_richness": 38.24,
+      "high_freq_dct_ratio": 0.5597,
+      "noise_estimate": 1.483
+    },
+    "final_params": {
+      "codec": "webp",
+      "quality": 85,
+      "method_effort": 6,
+      "subsampling": "4:2:0",
+      "sharp_yuv": true,
+      "scale_factor": 0.93,
+      "predicted_by_ai": true
+    },
+    "baseline_metrics": {
+      "psnr_db": 30.28,
+      "ssim": 0.8961,
+      "original_size_bytes": 7043684,
+      "compressed_size_bytes": 856165,
+      "compression_ratio": 8.23,
+      "reduction_percentage": 87.84,
+      "processing_time_sec": 0.137,
+      "throughput": "75.9 MP/s",
+      "efficiency_score": 70.06
+    },
+    "optimization_trace": [
+      {
+        "iteration": 1,
+        "params": {
+          "codec": "webp",
+          "quality": 85,
+          "method_effort": 6,
+          "subsampling": "4:2:0",
+          "sharp_yuv": true,
+          "scale_factor": 0.93,
+          "predicted_by_ai": true
+        },
+        "metrics": {
+          "psnr_db": 30.45,
+          "ssim": 0.9185,
+          "original_size_bytes": 7043684,
+          "compressed_size_bytes": 351924,
+          "compression_ratio": 20.01,
+          "reduction_percentage": 95.0,
+          "processing_time_sec": 1.255,
+          "throughput": "8.3 MP/s",
+          "efficiency_score": 75.42
+        },
+        "action_taken": "Quality low (SSIM 0.918 < 0.92). Nudging quality up."
+      },
+      {
+        "iteration": 2,
+        "params": {
+          "codec": "webp",
+          "quality": 85,
+          "method_effort": 6,
+          "subsampling": "4:2:0",
+          "sharp_yuv": true,
+          "scale_factor": 0.93,
+          "predicted_by_ai": true
+        },
+        "metrics": {
+          "psnr_db": 30.58,
+          "ssim": 0.9203,
+          "original_size_bytes": 7043684,
+          "compressed_size_bytes": 440724,
+          "compression_ratio": 15.98,
+          "reduction_percentage": 93.74,
+          "processing_time_sec": 1.296,
+          "throughput": "8.0 MP/s",
+          "efficiency_score": 74.56
+        },
+        "action_taken": "Target achieved"
+      }
+    ],
+    "verdict": "AI compression achieved 93.7% size reduction (7.04 MB -> 0.44 MB) with pristine visual quality (SSIM 0.9203, PSNR 30.6 dB)."
+  },
+  {
+    "media_type": "video",
+    "input_file": "D:\\Aookly\\samples\\input\\sample_video_50mb.mp4",
+    "output_file": "D:\\Aookly\\samples\\output\\sample_video_50mb_ai_compressed.mp4",
+    "original_size_bytes": 63101310,
+    "compressed_size_bytes": 19393568,
+    "compression_ratio": 3.25,
+    "reduction_percentage": 69.27,
+    "psnr_db": 27.95,
+    "ssim": 0.6965,
+    "total_processing_time_sec": 33.768,
+    "iterations_performed": 1,
+    "characteristics": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 30.0,
+      "duration": 10.0,
+      "frame_count": 300,
+      "bitrate_kbps": 50481.05,
+      "file_size_bytes": 63101310,
+      "avg_spatial_information": 62.46,
+      "avg_laplacian_variance": 1460.87,
+      "avg_shannon_entropy": 6.079,
+      "temporal_information_mean": 36.66,
+      "temporal_information_max": 37.68,
+      "motion_vector_energy": 10.52,
+      "scene_cut_count": 0,
+      "color_richness": 44.41
+    },
+    "final_params": {
+      "codec": "libx265",
+      "crf": 26,
+      "preset": "medium",
+      "keyint": 60,
+      "b_frames": 3,
+      "aq_mode": 2,
+      "aq_strength": 1.1,
+      "tune": "grain",
+      "scale_factor": 0.928,
+      "predicted_by_ai": true
+    },
+    "baseline_metrics": {
+      "psnr_db": 30.09,
+      "ssim": 0.7134,
+      "original_size_bytes": 63101310,
+      "compressed_size_bytes": 18585220,
+      "compression_ratio": 3.4,
+      "reduction_percentage": 70.55,
+      "processing_time_sec": 5.38,
+      "throughput": "2.8 FPS",
+      "efficiency_score": 28.29,
+      "psnr_min": 26.8,
+      "psnr_std": 1.68,
+      "ssim_min": 0.515,
+      "ssim_std": 0.1055,
+      "original_bitrate_kbps": 50481.0,
+      "compressed_bitrate_kbps": 14868.2,
+      "frames_evaluated": 15
+    },
+    "optimization_trace": [
+      {
+        "iteration": 1,
+        "params": {
+          "codec": "libx265",
+          "crf": 26,
+          "preset": "medium",
+          "keyint": 60,
+          "b_frames": 3,
+          "aq_mode": 2,
+          "aq_strength": 1.1,
+          "tune": "grain",
+          "scale_factor": 0.928,
+          "predicted_by_ai": true
+        },
+        "metrics": {
+          "psnr_db": 27.95,
+          "ssim": 0.6965,
+          "original_size_bytes": 63101310,
+          "compressed_size_bytes": 19393568,
+          "compression_ratio": 3.25,
+          "reduction_percentage": 69.27,
+          "processing_time_sec": 16.231,
+          "throughput": "0.9 FPS",
+          "efficiency_score": 18.55,
+          "psnr_min": 25.34,
+          "psnr_std": 1.07,
+          "ssim_min": 0.5101,
+          "ssim_std": 0.0874,
+          "original_bitrate_kbps": 50481.0,
+          "compressed_bitrate_kbps": 15514.9,
+          "frames_evaluated": 15
+        },
+        "action_taken": "Target achieved"
+      }
+    ],
+    "verdict": "AI video compression reduced size by 69.3% (63.10 MB -> 19.39 MB) with excellent perceptual quality (SSIM 0.6965, PSNR 27.9 dB)."
+  }
+]
